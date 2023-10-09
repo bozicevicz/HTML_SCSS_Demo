@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+}
+body header {
+  flex: 0 1 25vh;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  background-color: #333;
+  padding: 3vh;
+}
+body header nav ul {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+body header nav ul li {
+  padding: 5px;
+}
+body header nav ul a {
+  text-decoration: none;
+  background-color: #900;
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 10vw;
+}
+body header nav ul a:hover {
+  color: white;
+  background-color: red;
+  box-shadow: 0 10px 15px black, 0 15px 50px black;
+}
+body header div {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+body header div h1,
+body header div p {
+  color: #eee;
+  font-family: Tahoma, Verdana, sans-serif;
+  padding: 20px;
+}
+body header a {
+  text-decoration: none;
+  background-color: #900;
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 10vw;
+}
+body header a:hover {
+  color: white;
+  background-color: red;
+  box-shadow: 0 10px 15px black, 0 15px 50px black;
+}
+body main, body footer {
+  flex: 0 1 50vh;
+  color: #333;
+  font-family: Tahoma, Verdana, sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5vh;
+}
+body main h1, body footer h1 {
+  flex: 0 1 100vw;
+  padding: 20px;
+}
+body main section, body footer section {
+  flex: 0 1 20vw;
+  padding: 15px;
+  margin: 5px;
+  border: 1px solid #333;
+}
+body main section h2, body footer section h2 {
+  padding: 5px;
+}
+body main section p, body footer section p {
+  text-align: left;
+}
+@media screen and (max-width: 1024px) {
+  body main section, body footer section {
+    flex: 0 1 80vw;
+  }
+}
+body footer {
+  flex: 0 1 25vh;
+  background-color: #333;
+  color: #eee;
+}
+body footer section {
+  flex: 0 1 42vw;
+}
+@media screen and (max-width: 1024px) {
+  body footer section {
+    flex: 0 1 80vw;
+  }
+}/*# sourceMappingURL=style.css.map */

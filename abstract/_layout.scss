@@ -1,0 +1,25 @@
+@mixin flexy {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+@mixin link-button {
+  text-decoration: none;
+  background-color: $button-color;
+  color: $secondary-color;
+  font-family: $link-font;
+  padding: 5px 10vw;
+  &:hover {
+    color: white;
+    background-color: red;
+    box-shadow: 0 10px 15px black, 0 15px 50px black;
+  }
+}
+
+@mixin responsive {
+  @media screen and (max-width: 1024px) {
+    flex: 0 1 80vw;
+  }
+}
